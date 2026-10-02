@@ -1,0 +1,10 @@
+metric,value
+threshold_km2,5.0
+total_length_km,3919.8763
+n_links,1269.0
+n_streams_all_orders,821.0
+max_order,5.0
+drainage_density_km_per_km2,0.3301
+stream_frequency_per_km2,0.0691
+mean_bifurcation_ratio,5.1205
+weighted_mean_bifurcation_ratio,4.4164

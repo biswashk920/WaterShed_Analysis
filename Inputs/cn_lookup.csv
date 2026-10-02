@@ -1,0 +1,12 @@
+code,class,cn_A,cn_B,cn_C,cn_D,note
+10,Tree cover,36.0,60.0,73.0,79.0,"woods, fair condition"
+20,Shrubland,35.0,56.0,70.0,77.0,"brush, fair condition"
+30,Grassland,49.0,69.0,79.0,84.0,"pasture / range, fair condition"
+40,Cropland,62.0,71.0,78.0,81.0,"row crops, terraced and contoured, good"
+50,Built-up,77.0,85.0,90.0,92.0,"residential, about 65 % impervious"
+60,Bare / sparse vegetation,77.0,86.0,91.0,94.0,fallow bare soil; conservative for rock and scree
+70,Snow and ice,,,,,no CN: see SNOW_ICE_CN_FOR_RASTER / SNOW_ICE_CN_ALT
+80,Permanent water,100.0,100.0,100.0,100.0,no infiltration
+90,Herbaceous wetland,78.0,84.0,88.0,90.0,"approximate, saturated soils"
+95,Mangroves,78.0,84.0,88.0,90.0,not expected in this basin
+100,Moss and lichen,68.0,79.0,86.0,89.0,"alpine tundra, poor-condition pasture"

@@ -1,0 +1,15 @@
+,value
+dem_file,kali44N.tif
+crs_epsg,32644
+resolution_m,29.513
+crop_inset_km,10
+outlet_x_original,837422.9876036835
+outlet_y_original,3073505.5186083554
+outlet_x_snapped,837422.8691822852
+outlet_y_snapped,3073284.1123260576
+snap_shift_m,221.4
+snap_distance_m,500
+watershed_cells,13631535
+watershed_area_km2,11873.09
+perimeter_km_raw,1110.39
+touches_dem_edge,False

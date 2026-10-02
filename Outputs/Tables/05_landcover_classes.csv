@@ -1,0 +1,10 @@
+code,class,cells,area_km2,percent
+10,Tree cover,6918523,6026.04,50.75
+20,Shrubland,14442,12.58,0.11
+30,Grassland,1986543,1730.28,14.57
+40,Cropland,435583,379.39,3.2
+50,Built-up,27781,24.2,0.2
+60,Bare / sparse vegetation,2689229,2342.32,19.73
+70,Snow and ice,1093274,952.24,8.02
+80,Permanent water,61777,53.81,0.45
+100,Moss and lichen,404383,352.22,2.97

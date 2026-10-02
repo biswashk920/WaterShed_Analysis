@@ -1,0 +1,4 @@
+bend_class,n,total_arc_km,mean_sinuosity,median_min_radius_m,n_tight
+short (< 1 km),400.0,204.84,1.08,589.69,168.0
+medium (1-3 km),45.0,55.97,1.3,411.89,27.0
+long (>= 3 km),,,,,

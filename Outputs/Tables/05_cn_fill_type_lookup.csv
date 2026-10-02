@@ -1,0 +1,4 @@
+fill_code,method,description
+0,Source CN,Original NRCS crosswalk CN; not interpolated
+1,Within-subcatchment nearest neighbor,Nearest strict-CN pixel from the same subcatchment
+2,Basin-mean fallback,Used only if a subcatchment has no strict-CN donor pixels

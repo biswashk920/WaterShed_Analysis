@@ -1,0 +1,6 @@
+change_magnitude,lowered_cells,raised_cells,lowered_pct_basin,raised_pct_basin
+<1 m,12500,15841,0.092,0.116
+1-5 m,31362,12328,0.23,0.09
+5-20 m,17773,1597,0.13,0.012
+20-50 m,3171,68,0.023,0.0
+>50 m,1752,8,0.013,0.0

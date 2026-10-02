@@ -1,0 +1,4 @@
+layer,min,mean,median,p98,max
+flow_length_downstream_m,29.51,260435.48,257303.05,406986.6,422304.12
+flow_length_upstream_max_m,0.0,480.88,71.25,1835.21,422274.62
+sca_dinf_m,29.51,218897.44,136.57,25184.1,4.02296e+08

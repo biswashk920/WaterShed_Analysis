@@ -1,0 +1,23 @@
+name: watershed-analysis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - numba
+  - shapely
+  - pyproj
+  - geopandas
+  - pyogrio
+  - rasterio
+  - whitebox
+  - requests
+  - pystac-client
+  - planetary-computer
+  - pillow
+  - jupyterlab
+  - ipykernel
+  - openpyxl

@@ -1,0 +1,32 @@
+metric,value,unit,source
+Basin area,11873.0888,km²,morphometry
+Perimeter,905.5939,km,morphometry
+Longest flowpath,422.2746,km,morphometry
+Form factor,0.0666,-,morphometry
+Circularity ratio,0.1819,-,morphometry
+Minimum elevation,184.0,m,morphometry
+Maximum elevation,8141.0,m,morphometry
+Mean elevation,2797.2752,m,morphometry
+Relief,7957.0,m,morphometry
+Hypsometric integral,0.3284,-,morphometry
+Mean slope,28.1457,deg,morphometry
+Area steeper than 30°,43.7119,%,slope
+Stream threshold,5.0,km²,morphometry
+Drainage density,0.3301,km/km²,morphometry
+Stream frequency,0.0691,1/km²,morphometry
+Maximum Strahler order,5.0,-,morphometry
+Bifurcation ratio (weighted),4.4167,-,morphometry
+Tree cover,50.7538,%,land use
+"Bare, snow and ice",27.7482,%,land use
+Basin curve number (AMC II),73.0098,-,land use
+Main stem length,417.8714,km,river
+Main stem drop,5448.2649,m,river
+Main stem mean gradient,0.013,m/m,river
+Main stem sinuosity,2.024,-,river
+Slope-area concavity θ,0.4143,-,river
+Knickzones (all),9.0,-,river
+Bends,445.0,-,river
+Largest 5 km head,421.737,m,river (head only)
+Subcatchments,36.0,-,subbasins
+Median subcatchment area,322.5615,km²,subbasins
+Largest subcatchment,853.967,km²,subbasins

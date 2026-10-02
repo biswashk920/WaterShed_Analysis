@@ -1,0 +1,4 @@
+layer,min,mean,median,p98,max
+hand_m,0.0,887.6,724.0,2841.0,5688.0
+flow_distance_to_stream_m,0.0,6704.31,5516.63,21256.73,35531.11
+euclid_distance_to_stream_m,0.0,3856.24,3394.48,10727.22,16414.02

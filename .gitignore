@@ -1,0 +1,40 @@
+# ---------- Python / Jupyter ----------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+Untitled*.ipynb
+*.nbconvert.ipynb
+.venv/
+venv/
+.env
+
+# ---------- OS / editors ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# ---------- Large input data (downloaded separately, see README) ----------
+Inputs/kali44N*
+Inputs/*_cache/
+Inputs/*.zip
+*.ovr
+*.aux.xml
+
+# ---------- Generated outputs ----------
+# Rasters and figures are large and fully reproducible, so they are not tracked.
+# (GitHub rejects any single file over 100 MB.)
+Outputs/Rasters/
+Outputs/Figures/
+Outputs/Tables/*.xlsx
+
+# Vectors: track only the small, useful ones
+Outputs/Vectors/*
+!Outputs/Vectors/watershed_boundary.gpkg
+!Outputs/Vectors/outlet_snapped.*
+!Outputs/Vectors/streams.gpkg
+!Outputs/Vectors/main_stem.gpkg
+!Outputs/Vectors/longest_flowpath.gpkg
+!Outputs/Vectors/subcatchments.gpkg
+!Outputs/Vectors/subbasin_statistics.gpkg

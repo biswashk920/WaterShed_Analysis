@@ -1,0 +1,8 @@
+metric,value
+max_accumulation_cells,13631535.0
+max_drainage_area_km2,11873.089
+basin_cells,13631535.0
+pct_cells_area_ge_1_km2,1.715
+pct_cells_area_ge_10_km2,0.612
+pct_cells_area_ge_100_km2,0.222
+pct_cells_area_ge_1000_km2,0.089

@@ -1,0 +1,4 @@
+threshold_km2,threshold_cells,segments,total_length_km,drainage_density_km_per_km2
+5,5741,1269,3919.9,0.33
+10,11481,637,2903.0,0.245
+25,28703,269,1932.5,0.163

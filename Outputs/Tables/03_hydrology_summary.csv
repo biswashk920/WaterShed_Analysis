@@ -1,0 +1,8 @@
+metric,value
+basin_area_km2,11873.0888
+longest_flowpath_km,422.2746
+flowpath_source_elev_m,6148.0
+flowpath_outlet_elev_m,184.0
+flowpath_mean_gradient_m_per_m,0.0141
+cells_changed_by_conditioning_pct,0.7072
+net_volume_change_million_m3,-416.4788

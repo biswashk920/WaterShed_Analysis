@@ -1,0 +1,2 @@
+basin_area_km2,subcatchments,landcover_coverage_pct,hsg_coverage_pct,cn_coverage_pct,CN_II_mapped_area_only,cn_mapped_area_km2,model_ready_cn_coverage_pct,cn_interpolated_pct,cn_basin_mean_fallback_pct,CN_II_model_ready
+11873.089,36,100.0,100.0,88.809,69.892,10544.43,100.0,11.191,0.0,71.158

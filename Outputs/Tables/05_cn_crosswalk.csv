@@ -1,0 +1,12 @@
+worldcover_code,worldcover_class,nrcs_analogue,crosswalk_limit,CN_A,CN_B,CN_C,CN_D,reference
+10,Tree cover,"Woods, good condition",Direct canopy analogue; condition still assumed,30.0,55.0,70.0,77.0,NRCS TR-55 Table 2-2c
+20,Shrubland,"Brush, good condition",Direct shrub analogue; condition still assumed,30.0,48.0,65.0,73.0,NRCS TR-55 Table 2-2c
+30,Grassland,"Pasture/range, good condition",Grassland mapped to good-condition range,39.0,61.0,74.0,80.0,NRCS TR-55 Table 2-2b
+40,Cropland,"Straight-row, good condition",Management/tillage is not observed by WorldCover,67.0,78.0,85.0,89.0,NRCS TR-55 Table 2-2a
+50,Built-up,Not assigned,Built-up does not specify impervious fraction,,,,,No defensible row from WorldCover class alone
+60,Bare / sparse vegetation,"Fallow, bare soil",Bare/sparse class mapped to fallow bare-soil row,77.0,86.0,91.0,94.0,NRCS TR-55 Table 2-2a
+70,Snow and ice,Not assigned,No matching TR-55 land-cover row,,,,,Not mapped
+80,Permanent water,Open water,Open water represented by CN 100 convention,100.0,100.0,100.0,100.0,NRCS runoff-model convention
+90,Herbaceous wetland,Not assigned,Wetland saturation/seasonality not represented by class,,,,,Not mapped
+95,Mangroves,Not assigned,No matching TR-55 land-cover row,,,,,Not mapped
+100,Moss and lichen,Not assigned,No matching TR-55 land-cover row,,,,,Not mapped

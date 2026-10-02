@@ -1,0 +1,134 @@
+kind,name,description
+file,07_consistency_checks.csv,"cross-notebook audit: areas, counts, lengths, bookkeeping"
+file,07_watershed_morphometry.csv,"basin shape, relief and drainage indices (section, metric, value, unit, note)"
+file,07_elevation_statistics.csv,"elevation distribution, hypsometric integral, area above thresholds"
+file,07_elevation_bands.csv,"500 m bands: area, slope, land cover shares, CN, cumulative area"
+file,07_hypsometric_curve.csv,area-elevation curve (401 points)
+file,07_slope_statistics.csv,"slope distribution and area above 15, 30 and 45 degrees"
+file,07_slope_classes.csv,"slope classes with area, mean elevation and TWI"
+file,07_slope_by_aspect.csv,"aspect directions with area, slope and elevation"
+file,07_terrain_layer_statistics.csv,"min, percentiles, mean, max of elevation, slope, TRI, relief, curvature and TPI"
+file,07_stream_statistics.csv,"Strahler table with gradient, sinuosity and ksn by order"
+file,07_stream_threshold_scale.csv,drainage density and link counts at several thresholds
+file,07_subbasin_statistics.csv,"one row per subcatchment: morphometry, land use, soil, CN, river stats, ranks, z-scores, screening score"
+file,07_subbasin_metric_distribution.csv,spread of each metric across subcatchments
+file,07_subbasin_correlation.csv,Spearman correlations between subcatchment metrics
+file,07_river_statistics.csv,"main stem profile, knickzones, planform, confinement, confluences, head drops"
+file,07_hydrology_layer_statistics.csv,"statistics of TWI, SPI, STI, SCA, flow lengths, HAND and stream distances"
+file,07_hydrology_statistics.csv,"flowpath, conditioning, HAND shares, distance to streams, width function"
+file,07_width_function.csv,area per 5 km of flow distance to the outlet
+file,07_landuse_soil_cn_statistics.csv,"land cover, soil group and curve-number statistics"
+file,07_landcover_x_hsg_km2.csv,area of each land cover by hydrologic soil group
+file,07_key_metrics.csv,headline numbers for reports
+file,07_output_manifest.csv,every output file with size and date
+column,sub_id,subcatchment id (1 = outlet unit; downstream ids are always smaller)
+column,down_id,id of the downstream unit (0 = basin outlet)
+column,on_main_stem,unit contains the main stem
+column,area_km2,unit area
+column,upstr_area_km2,contributing area at the unit outlet
+column,CN_II,"composite curve number, AMC II, snow and ice excluded"
+column,CN_II_incl_snow,same with snow and ice at CN 100
+column,CN_II_slopeadj,slope-adjusted CN (Sharpley-Williams)
+column,CN_I,dry-condition CN
+column,CN_III,wet-condition CN
+column,S_mm,potential maximum retention
+column,Ia_mm,initial abstraction (0.2 S)
+column,snow_ice_pct,share of snow and ice
+column,cn_caution,"True when snow and ice cover 25 % or more, so CN describes little of the unit"
+column,dominant_landcover,land cover with the largest share
+column,dominant_hsg,hydrologic soil group with the largest share
+column,dominant_texture,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,tc_kirpich_h,Kirpich time of concentration (hours; calibrated on small catchments)
+column,tlag_scs_h,SCS lag time (hours)
+column,tc_scs_h,SCS time of concentration (hours)
+column,n_direct_upstream,number of units draining directly into this one
+column,perimeter_km,outline length (simplified by one cell)
+column,centroid_x,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,centroid_y,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,centroid_lon,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,centroid_lat,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,outlet_x,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,outlet_y,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,outlet_lon,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,outlet_lat,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,outlet_elev_m,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,elev_min_m,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,elev_max_m,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,elev_mean_m,mean elevation
+column,elev_median_m,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,relief_m,max minus min elevation
+column,hypsometric_integral,(mean - min) / (max - min)
+column,slope_mean_deg,mean slope
+column,slope_max_deg,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,mean_twi,mean topographic wetness index
+column,mean_hand_m,mean height above nearest drainage
+column,mean_tri_m,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,mean_relief_1km_m,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,flowpath_length_km,longest flowpath inside the unit
+column,flowpath_drop_m,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,flowpath_gradient_m_per_m,elevation drop over that flowpath
+column,form_factor,area / length^2
+column,elongation_ratio,1.128 sqrt(area) / length
+column,circularity_ratio,4 pi area / perimeter^2
+column,compactness_gravelius,perimeter / (2 sqrt(pi area))
+column,relief_ratio,relief / flowpath length
+column,stream_threshold_km2,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,stream_length_km,stream length in the unit at the stream threshold
+column,drainage_density_km_per_km2,stream length / area
+column,n_links,stream links in the unit
+column,n_channel_heads,channel heads in the unit
+column,head_frequency_per_km2,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,max_strahler_order,highest Strahler order
+column,n_merged,slivers merged into this unit
+column,merged_in_area_km2,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,lc_tree_cover_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,lc_shrubland_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,lc_grassland_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,lc_cropland_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,lc_built-up_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,lc_bare_sparse_vegetation_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,lc_snow_and_ice_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,lc_permanent_water_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,lc_moss_and_lichen_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,hsg_A_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,hsg_B_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,hsg_C_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,hsg_D_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,mean_sand_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,mean_clay_pct,"see the notebook that created it (04 geometry, 05 land use / soil / CN, 06 river)"
+column,mean_gradient_m_per_m,stream gradient (total link drop / stream length)
+column,max_link_gradient,steepest stream link
+column,mean_sinuosity_w,length-weighted mean sinuosity
+column,ksn_median,median channel steepness index
+column,ksn_mean_w,length-weighted mean ksn
+column,area_share_pct,share of the basin area
+column,rank_area_km2,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_area_km2,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_elev_mean_m,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_elev_mean_m,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_relief_m,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_relief_m,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_slope_mean_deg,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_slope_mean_deg,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_drainage_density_km_per_km2,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_drainage_density_km_per_km2,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_form_factor,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_form_factor,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_flowpath_length_km,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_flowpath_length_km,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_flowpath_gradient_m_per_m,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_flowpath_gradient_m_per_m,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_CN_II,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_CN_II,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_snow_ice_pct,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_snow_ice_pct,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_mean_twi,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_mean_twi,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_mean_hand_m,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_mean_hand_m,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_ksn_median,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_ksn_median,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,rank_mean_sinuosity_w,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,z_mean_sinuosity_w,rank_<metric> = rank (1 = highest); z_<metric> = z-score across units
+column,runoff_screening_score,0-100 rank-based index (editable weights); NOT a hazard or discharge model
+column,score_rank,rank by that score (1 = highest)

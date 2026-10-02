@@ -1,0 +1,5 @@
+product,source,processing,source_url_or_method,local_source_or_output
+Land cover,ESA WorldCover 2021 v200,10 m source; mode resampled to watershed grid,https://esa-worldcover.org/en/data-access,Outputs/Rasters/landcover_worldcover_2021_v200.tif
+Soil properties,ISRIC SoilGrids sand_mean and clay_mean,250 m predictions; thickness-weighted 0-100 cm from all five standard depth intervals,https://www.isric.org/explore/soilgrids,Inputs/soilgrids_verified_0-100cm/
+HSG,Texture-derived A-D classification,Derived from SoilGrids sand/clay using documented thresholds; not field-mapped NRCS HSG,Inputs/hsg_lookup.csv; classification method in this notebook,Outputs/Rasters/soil_hsg_texture_estimate.tif
+Curve Number,"USDA NRCS TR-55, AMC II",Strict NRCS TR-55 crosswalk retained; separate model-ready raster fills unsupported CN cells from nearest strict-CN pixel within the same subcatchment; fill type raster and audit table identify interpolated cells,https://www.nrcs.usda.gov/resources/guides-and-instructions/urban-hydrology-for-small-watersheds-tr-55,Outputs/Tables/05_cn_crosswalk.csv

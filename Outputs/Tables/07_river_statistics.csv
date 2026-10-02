@@ -1,0 +1,58 @@
+section,metric,value,unit,note
+main_stem,length_km,417.87142,km,
+main_stem,head_elev_m,5633.3504,m,
+main_stem,outlet_elev_m,185.0855,m,
+main_stem,total_drop_m,5448.2649,m,
+main_stem,mean_gradient_m_per_m,0.01304,m/m,
+main_stem,median_gradient_m_per_m,0.0042,m/m,1 km window
+main_stem,p90_gradient_m_per_m,0.0345,m/m,
+main_stem,steepest_10km_gradient,0.0843,m/m,block starting 410 km from the outlet
+main_stem,gentlest_10km_gradient,0.0007,m/m,block starting 150 km from the outlet
+main_stem,profile_concavity_index,0.54922,-,"0 = straight, > 0 = concave-up (steep headwaters)"
+main_stem,drop_share_third_1_pct,70.28583,%,"third 1 = headwaters, third 3 = lower reach"
+main_stem,drop_share_third_2_pct,25.36593,%,"third 1 = headwaters, third 3 = lower reach"
+main_stem,drop_share_third_3_pct,4.34823,%,"third 1 = headwaters, third 3 = lower reach"
+slope_area,slope_area_theta,0.4143,-,
+slope_area,slope_area_ks,74.6773,-,
+slope_area,slope_area_r2,0.7225,-,
+slope_area,ksn_median,106.6187,-,
+planform,sinuosity_overall,2.024,-,"30 m raster line, approximate"
+planform,sin_1km_median,1.0316,-,
+planform,sin_1km_p90,1.1646,-,
+planform,sin_5km_median,1.1427,-,
+planform,sin_5km_p90,1.4595,-,
+planform,radius_of_curvature_median_m,1180.0805,m,
+planform,valley_width_median_m,144.5244,m,HAND-based valley floor
+planform,valley_width_p90_m,312.9927,m,
+planform,pct_length_confined,71.7034,%,
+planform,pct_length_partly_confined,28.2966,%,
+bends,n_bends,445.0,-,
+bends,n_bends_tight,195.0,-,
+bends,mean_bend_sinuosity,1.09811,-,
+bends,n_medium,45.0,-,
+bends,n_short,400.0,-,
+knickzones,n_knickzones,9.0,-,
+knickzones,n_knickzones_major,2.0,-,
+knickzones,n_knickzones_artefact,8.0,-,overlap DEM-modified reaches
+knickzones,knickzone_drop_m,269.683,m,excluding artefacts
+knickzones,knickzone_drop_share_pct,4.94989,%,
+knickzones,knickzones_per_100km,0.23931,1/100km,excluding artefacts
+knickzones,largest_knickzone_drop_m,269.683,m,"id 6, lip 287 km from the outlet"
+confluences,n_major_confluences,19.0,-,
+confluences,n_tributary_larger_than_main,0.0,-,
+confluences,largest_tributary_area_km2,1994.47,km2,
+dem_quality,pct_main_stem_dem_modified,21.49882,%,
+dem_quality,n_dem_modified_zones,39.0,-,
+hydropower_screening,max_head_1km_m,135.175,m,intake 286 km from the outlet at 2247 m
+hydropower_screening,max_power_1km_MW_placeholder_flow,159.062,MW,uses the placeholder specific discharge from notebook 06; indicative only
+hydropower_screening,max_head_2km_m,231.84,m,intake 287 km from the outlet at 2325 m
+hydropower_screening,max_power_2km_MW_placeholder_flow,271.694,MW,uses the placeholder specific discharge from notebook 06; indicative only
+hydropower_screening,max_head_5km_m,421.737,m,intake 289 km from the outlet at 2448 m
+hydropower_screening,max_power_5km_MW_placeholder_flow,488.31,MW,uses the placeholder specific discharge from notebook 06; indicative only
+hydropower_screening,max_head_10km_m,633.599,m,intake 289 km from the outlet at 2471 m
+hydropower_screening,max_power_10km_MW_placeholder_flow,733.298,MW,uses the placeholder specific discharge from notebook 06; indicative only
+hydropower_screening,top_tributary_link_power_MW_placeholder_flow,85.677,MW,placeholder flow
+network,total_link_length_km,3919.8763,km,
+network,median_link_gradient,0.0679,m/m,
+network,pct_network_length_gradient_gt_0.1,33.62385,%,
+network,median_ksn,193.32195,-,

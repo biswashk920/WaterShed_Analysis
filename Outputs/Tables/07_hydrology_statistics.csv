@@ -1,0 +1,33 @@
+section,metric,value,unit,note
+flowpath_and_conditioning,longest_flowpath_km,422.2746,,
+flowpath_and_conditioning,flowpath_source_elev_m,6148.0,,
+flowpath_and_conditioning,flowpath_outlet_elev_m,184.0,,
+flowpath_and_conditioning,flowpath_mean_gradient_m_per_m,0.0141,,
+flowpath_and_conditioning,cells_changed_by_conditioning_pct,0.7072,,
+flowpath_and_conditioning,net_volume_change_million_m3,-416.4788,,
+flow_accumulation,pct_cells_area_ge_1_km2,1.715,%,
+flow_accumulation,pct_cells_area_ge_10_km2,0.612,%,
+flow_accumulation,pct_cells_area_ge_100_km2,0.222,%,
+flow_accumulation,pct_cells_area_ge_1000_km2,0.089,%,
+twi,twi_class_1_upper_break,4.643,-,quantile class (20 % of cells each)
+twi,twi_class_2_upper_break,5.25,-,quantile class (20 % of cells each)
+twi,twi_class_3_upper_break,5.931,-,quantile class (20 % of cells each)
+twi,twi_class_4_upper_break,7.01,-,quantile class (20 % of cells each)
+twi,twi_class_5_upper_break,26.157,-,quantile class (20 % of cells each)
+hand,pct_basin_hand_le_5m,0.51601,%,includes the stream cells
+hand,pct_basin_hand_le_5m_excl_streams,0.27821,%,
+hand,pct_basin_hand_le_15m,1.22414,%,includes the stream cells
+hand,pct_basin_hand_le_15m_excl_streams,0.98634,%,
+hand,pct_basin_hand_le_30m,1.99796,%,includes the stream cells
+hand,pct_basin_hand_le_30m_excl_streams,1.76016,%,
+hand,pct_basin_hand_le_100m,5.56231,%,includes the stream cells
+hand,pct_basin_hand_le_100m_excl_streams,5.32451,%,
+distance_to_streams,pct_basin_within_500m_of_a_stream,8.64405,%,
+distance_to_streams,pct_basin_within_1000m_of_a_stream,16.65348,%,
+distance_to_streams,pct_basin_within_2000m_of_a_stream,31.47677,%,
+distance_to_streams,pct_basin_within_5000m_of_a_stream,68.68425,%,
+width_function,mean_flow_length_to_outlet_km,260.43549,km,
+width_function,median_flow_length_to_outlet_km,257.30304,km,
+width_function,max_flow_length_to_outlet_km,422.30414,km,
+width_function,peak_width_bin_start_km,245.0,km,5 km bins
+width_function,peak_width_area_km2,385.10639,km2,

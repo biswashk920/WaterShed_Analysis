@@ -1,0 +1,11 @@
+column,meaning
+CN_II,"composite curve number, AMC II, area-weighted, snow and ice excluded"
+CN_II_incl_snow,"same, with snow and ice counted as CN 100"
+CN_II_slopeadj,same as CN_II after the Sharpley-Williams steep-slope adjustment (optional)
+CN_I / CN_III,"dry / wet antecedent conditions, converted from CN_II"
+S_mm / Ia_mm,potential maximum retention (25400/CN - 254) and initial abstraction (0.2 S)
+snow_ice_pct / cn_caution,share of snow and ice; cn_caution is True at 25 % or more
+lc_*_pct,land cover shares (ESA WorldCover 2021)
+hsg_A_pct ... hsg_D_pct,hydrologic soil group shares (SoilGrids 2.0 texture)
+tc_kirpich_h,Kirpich time of concentration from the in-unit longest flowpath (hours)
+tlag_scs_h / tc_scs_h,"SCS lag, and time of concentration = lag / 0.6 (hours)"

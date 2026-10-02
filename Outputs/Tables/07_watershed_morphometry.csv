@@ -1,0 +1,50 @@
+section,metric,value,unit,note
+general,area_km2,11873.08877,km2,
+general,area_cells,13631535.0,cells,29.51 m grid
+general,perimeter_km,905.59388,km,outline simplified by one cell
+general,perimeter_raw_km,1110.38719,km,"raster staircase outline, overstated"
+general,basin_length_longest_flowpath_km,422.2746,km,used as basin length Lb below
+general,basin_length_straight_km,185.98798,km,outlet to the farthest boundary point
+general,mean_basin_width_km,28.11699,km,A / Lb
+general,centroid_lon,83.64471,deg,
+general,centroid_lat,28.44955,deg,
+general,extent_west_lon,82.87858,deg,
+general,extent_east_lon,84.43676,deg,
+general,extent_south_lat,27.71923,deg,
+general,extent_north_lat,29.33176,deg,
+general,outlet_lon,84.42251,deg,
+general,outlet_lat,27.7417,deg,
+general,outlet_elev_m,184.0,m,
+shape,form_factor,0.06658,-,Horton: A / Lb^2
+shape,elongation_ratio,0.29107,-,Schumm: 1.128 sqrt(A) / Lb
+shape,circularity_ratio,0.18193,-,Miller: 4 pi A / P^2
+shape,compactness_coefficient,2.34448,-,Gravelius: P / (2 sqrt(pi A))
+shape,shape_factor,15.01849,-,Lb^2 / A
+shape,lemniscate_ratio,11.79549,-,Chorley: pi Lb^2 / 4A
+shape,hack_coefficient,1.51655,-,"Hack's law: L = c A^0.6, c is typically 1.3-1.5"
+relief,min_elevation_m,184.0,m,
+relief,max_elevation_m,8141.0,m,
+relief,mean_elevation_m,2797.27515,m,
+relief,relief_m,7957.0,m,
+relief,relief_ratio,0.01884,-,Schumm: relief / Lb
+relief,relative_relief_pct,0.87865,%,Melton: relief / perimeter
+relief,melton_ruggedness,0.07302,-,relief / sqrt(A)
+relief,hypsometric_integral,0.32842,-,(mean - min) / (max - min)
+relief,mean_slope_deg,28.14572,deg,
+relief,longest_flowpath_gradient_m_per_m,0.0141,m/m,
+drainage,stream_threshold_km2,5.0,km2,every drainage figure below depends on this threshold
+drainage,total_stream_length_km,3919.8763,km,threshold 5 km2
+drainage,drainage_density_km_per_km2,0.3301,km/km2,threshold 5 km2
+drainage,stream_frequency_per_km2,0.0691,1/km2,threshold 5 km2
+drainage,n_streams_all_orders,821.0,-,
+drainage,n_first_order_streams,635.0,-,
+drainage,max_strahler_order,5.0,-,threshold 5 km2
+drainage,bifurcation_ratio_regression,4.92584,-,"log N vs order, R2 = 1.00"
+drainage,bifurcation_ratio_weighted_mean,4.41673,-,Strahler weighted mean
+drainage,length_ratio_regression,3.06903,-,"log mean length vs order, R2 = 0.94"
+drainage,drainage_texture_streams_per_km,0.90659,1/km,all streams / perimeter
+drainage,texture_ratio_first_order_per_km,0.7012,1/km,Smith: N1 / perimeter
+drainage,constant_of_channel_maintenance_km2_per_km,3.02939,km2/km,Schumm: 1 / Dd
+drainage,overland_flow_length_km,1.51469,km,Horton: 1 / 2Dd
+drainage,ruggedness_number,2.62661,-,Strahler: relief(km) x Dd
+drainage,infiltration_number,0.02281,-,Faniran: Dd x Fs

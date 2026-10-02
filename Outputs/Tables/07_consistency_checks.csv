@@ -1,0 +1,20 @@
+check,value_a,value_b,difference,passed
+basin area: mask vs boundary polygon (km2),11873.0888,11873.0888,-0.0,True
+basin area: mask vs sum of subcatchments (km2),11873.0888,11873.0889,-0.0001,True
+basin area: mask vs land cover classes (km2),11873.0888,11873.08,0.0088,True
+subcatchments: raster vs notebook 04 table,36.0,36.0,0.0,True
+subcatchments: notebook 04 table vs notebook 05 table,36.0,36.0,0.0,True
+stream length: notebook 04 summary vs vector (km),3919.8763,3919.8753,0.001,True
+stream length: vector vs river links table (km),3919.8753,3919.8763,-0.001,True
+stream links: summary vs vector,1269.0,1269.0,0.0,True
+stream links: vector vs river links table,1269.0,1269.0,0.0,True
+stream links: vector vs sum over subcatchments,1269.0,1269.0,0.0,True
+Strahler streams: summed over orders vs summary,821.0,821.0,0.0,True
+channel heads: subcatchments vs order-1 streams,635.0,635.0,0.0,True
+main stem length: notebook 04 vs 06 (km),417.8714,417.8714,0.0,True
+longest flowpath: summary vs vector (km),422.2746,422.2746,-0.0,True
+outlet accumulation vs basin area (km2),11873.0889,11873.0888,0.0001,True
+mean elevation: area-weighted subcatchments vs raster (m),2797.2753,2797.2751,0.0001,True
+upstream-area bookkeeping: max error per unit (km2),0.0013,0.0,0.0013,True
+land cover shares sum to 100: max deviation,0.02,0.0,0.02,True
+all subcatchment CN between 30 and 100,1.0,1.0,0.0,True
